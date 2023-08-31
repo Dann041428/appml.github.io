@@ -1,0 +1,16 @@
+runtime: python27
+
+handlers:
+  - url: /.*
+    script: auto
+
+env_variables:
+  PYTHONUNBUFFERED: '1'
+
+libraries:
+- name: numpy
+  version: latest
+
+threadsafe: false
+
+entrypoint: streamlit run app.py
